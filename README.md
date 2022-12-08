@@ -21,6 +21,11 @@ TinyCD:
 
 ## Changes Made:
 
+The Change You Want to See:
+* Updated config file to run Google Earth dataset images (detection_resnet50_3x_coam_layers_affine.yml)
+* Added conditional to data processing file to ignore image sets with empty masks (lines 85-90 in kubric_change.py)
+
+
 
 
 ## Results:
