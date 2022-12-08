@@ -1,0 +1,30 @@
+encoder: resnet50
+attention: coam
+coam_layer_data: [3, [2048, 1024, 512], [256, 128, 64]]
+lr: 0.0001
+weight_decay: 0.0005
+batch_size: 16
+test_batch_size: 16
+num_dataloader_workers: 8
+datasets:
+  train_dataset:
+    name: kubric
+    class: KubricChange
+    args:
+      path_to_dataset: /content/drive/MyDrive/Fall 2022/CS 5824/The-Change-You-Want-to-See/data_dir/Cross-data
+      split: "train"
+      method: "centernet"
+  val_dataset:
+    name: kubric
+    class: KubricChange
+    args:
+      path_to_dataset: /content/drive/MyDrive/Fall 2022/CS 5824/The-Change-You-Want-to-See/data_dir/kubric-change
+      split: "train"
+      method: "centernet"
+  test_datasets:
+    - name: kubric
+      class: KubricChange
+      args:
+        path_to_dataset: /content/drive/MyDrive/Fall 2022/CS 5824/The-Change-You-Want-to-See/data_dir/Cross-data
+        split: "train"
+        method: "centernet"
