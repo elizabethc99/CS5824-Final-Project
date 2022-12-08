@@ -15,6 +15,11 @@ Sachdeva, Ragav, and Andrew Zisserman. "The Change You Want to See." arXiv prepr
 TinyCD:
 
 
-Changes Made:
+## Changes Made:
+
+
+
+## Results:
+https://wandb.ai/elizabethchristman/badlaav/reports/Analysis-Of-Change-Detection-Models--VmlldzozMTA4OTgy?accessToken=68317xz165mulowx6lwysgcwoy3f3k80osskgk5pjn13jb5x3kvzmc8ouid4kw1z
 
 
